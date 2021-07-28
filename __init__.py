@@ -54,9 +54,9 @@ def calculate_value(cls, challenge):
     b = lambda x: (a((c1 - c0) * x + c0) - a(c1)) / (a(c0) - a(c1))
 
     def get_score(rl, rh, maxSolves, solves):
-        s = math.max(1, maxSolves)
+        s = max(1, maxSolves)
         f = lambda x: rl + (rh - rl) * b(x / s)
-        return round(math.max(f(solves), f(s)))
+        return round(max(f(solves), f(s)))
     value = get_score(challenge.minimum, challenge.initial, challenge.decay, solve_count)
 
     if value < challenge.minimum:
