@@ -2,6 +2,8 @@
 
 This plugin modifies the dynamic value challenge scoring function to use the same scoring function seen in rCTF.
 
+You can play with the v_minimum, v_initial, and v_decay parameters here: https://www.desmos.com/calculator/w1hh7uqfgc 
+
 
 ## Before
 ![mod](./images/ctfd_default.png)
